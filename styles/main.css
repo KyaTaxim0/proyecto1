@@ -13,9 +13,11 @@
 *** Inicio
 */
 
+.inicio{
+    position: relative;
+}
 
 .inicio img {
-    position: relative;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -36,8 +38,9 @@
     position: absolute;
     color:white;
     font-size: 42px;
+    font-weight: 600;
     font-family: Helvetica, sans-serif;
-    bottom: 10px;
+    bottom: 10%;
     width: 350px;
     left: 10%;
 }
@@ -56,7 +59,7 @@
 
 
 
-.sobremi h3 {
+.sobremi h2 {
     margin: 2%;
     text-align: center;
     color: darkblue;
@@ -92,7 +95,7 @@
 }
 
 
-.misskills h3 {
+.misskills h2 {
     margin: 2%;
     text-align: center;
     color: chartreuse;
@@ -103,6 +106,25 @@
 
 .columna{
     width: 50%;
+    color: white;
+    margin-right: 10%;
+}
+
+
+.fila1 {
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    margin: 2.5% 0% 2.5% 0%;
+    border-radius: 6px;
+}
+
+
+.fila2 {
+    background-color: turquoise;
+    height: 10px;
+    width: 50%;
+    border-radius: 6px;
 }
 
 /*
@@ -116,7 +138,7 @@
 }
 
 
-.portafolio h3 {
+.portafolio h2 {
     margin: 2%;
     text-align: center;
     color: seagreen;
@@ -139,7 +161,7 @@
 }
 
 
-.clientes h3 {
+.clientes h2 {
     margin: 2%;
     text-align: center;
     color: greenyellow;
@@ -162,7 +184,7 @@
 }
 
 
-.contacto h3 {
+.contacto h2 {
     margin: 2%;
     text-align: center;
     color: red;
@@ -170,8 +192,21 @@
     font-weight: bold;
 }
 
+.form-enviar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 10% 2% 10%;
+}
 
-.contacto a {
+.form-enviar input{
+    width: 45%;
+}
+
+.form-enviar textarea{
+    width: 100%;
+}
+
+.button-enviar {
     text-decoration: none;
     margin-left: 45%;
     padding: 10px 30px 10px 30px;
