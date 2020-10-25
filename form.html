@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3 - Contactanos</title>
+    <style>
+        body{
+            background: linear-gradient(to right,rgb(34, 96, 104),rgb(121, 191, 202));
+        }
+        main{
+            width: 80%;
+            height: 80%;
+            margin: 5% auto 0 auto;
+            display: flex;
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 2px 2px rgb(32, 76, 90);
+            align-items: center;
+        }
+
+        aside {
+            width: 50%;
+            height: 95%;
+
+        }
+
+        .aside_img{
+            background: url(./images/image-1.jpg) no-repeat center;
+            width: 80%;
+            height: 450px;
+            margin: 2.5% auto 2.5% auto;
+            border:thick solid #428ea1;
+            border-radius: 20px;
+        }
+
+        form h1 {
+            font-size: 32px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0 auto 0 auto;
+            left: 7%;
+            bottom: 5%;
+            color: rgb(73, 141, 158);
+        }
+
+        section{
+            width: 50%;
+        }
+
+        form{
+            width: 80%;
+            font-family: arial;
+        }
+
+        input{
+            width: 100%;
+            margin: 1% auto 1% auto;
+            border:none;
+            border-bottom:1px solid #52b0c7;
+            padding: 5px;
+        }
+
+
+
+        .disp{
+            margin: 1% auto 1% auto;
+            display:flex;
+        }
+
+        .disp label{
+            width:100px;
+        }
+
+        .disp input{
+            width: 50px;
+        }
+
+        button{
+            background-color: rgb(148, 190, 201);
+            color: rgb(33, 82, 94);
+            margin: 2% auto 2% auto;
+            padding: 5px 30px 5px 30px;
+        }
+
+        input:required {
+            box-shadow: 0 0 1.5px 1px rgb(6, 94, 94);
+        }
+        
+
+        input:focus:valid{
+            outline:none;
+            color:rgb(32, 122, 52);
+        }
+
+        input:focus:invalid{
+            outline:none;
+            color:rgb(145, 39, 39);
+            
+        }
+
+        input[type="radio"]{
+            background-color: rgb(6, 94, 94);
+        }
+
+        button:hover{
+            background-color: rgb(83, 139, 153);
+            color: white;
+            padding: 5px 30px 5px 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <aside>
+            <div class="aside_img"></div>
+        </aside>
+        <section>
+            <form>
+                <h1>Te contactaremos</h1>
+                <hr>
+                <br>
+                <input required pattern="[a-zA-Z]+" type="text" name="name" placeholder="Nombres">
+                <input required pattern="[a-zA-Z]+" type="text" name="lastname" placeholder="Apellidos">
+                <input type="number" min="18" max="80" name="age" placeholder="Edad">
+                <div class="disp">
+                    <label>Sexo</label>
+                    <label>
+                        F
+                        <input type="radio" name="sex">
+                    </label>
+                    <label>
+                        M
+                        <input type="radio" name="sex">
+                    </label>
+                </div>
+                <input required pattern="[a-z-A-Z0-9]+" minlength="8" type="text" name="dni" placeholder="DNI">
+                <input required type="email" name="email" placeholder="Email">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
