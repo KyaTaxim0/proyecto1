@@ -1,0 +1,217 @@
+/*
+** GLOBAL
+*/
+
+.estructura {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10% 0px 10%;
+}
+
+
+/*
+*** Inicio
+*/
+
+.inicio{
+    position: relative;
+}
+
+.inicio img {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.inicio h1 {
+    position: absolute;
+    color:white;
+    font-weight: bold;
+    font-size: 62px;
+    font-family: Helvetica, sans-serif;
+    top: 20px;
+    left: 40%;
+}
+
+/*Revisar*/
+.inicio h2 { 
+    position: absolute;
+    color:white;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    bottom: 10%;
+    width: 350px;
+    left: 10%;
+}
+
+
+/*
+*** Sobre Mi
+*/
+
+
+
+.sobremi {
+    background-color: mediumpurple;
+    padding: 20px;
+}
+
+
+
+.sobremi h2 {
+    margin: 2%;
+    text-align: center;
+    color: darkblue;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.sobremi p {
+    margin: 2%;
+    text-align: center;
+}
+
+
+.sobremi a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: violet;
+    border-radius: 6px;
+}
+
+/*
+*** Mis Skills
+*/
+
+
+.misskills {
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+
+.misskills h2 {
+    margin: 2%;
+    text-align: center;
+    color: chartreuse;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.columna{
+    width: 50%;
+    color: white;
+    margin-right: 10%;
+}
+
+
+.fila1 {
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    margin: 2.5% 0% 2.5% 0%;
+    border-radius: 6px;
+}
+
+
+.fila2 {
+    background-color: turquoise;
+    height: 10px;
+    width: 50%;
+    border-radius: 6px;
+}
+
+/*
+*** Portafolio
+*/
+
+
+.portafolio{
+    background-color: goldenrod;
+    padding: 20px;
+}
+
+
+.portafolio h2 {
+    margin: 2%;
+    text-align: center;
+    color: seagreen;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.portafolio figure{
+    margin: 10px;
+}
+
+/*
+*** Clientes
+*/
+
+
+.clientes{
+    background-color: rgb(54, 52, 52);
+    padding: 20px;
+}
+
+
+.clientes h2 {
+    margin: 2%;
+    text-align: center;
+    color: greenyellow;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.clientes figure{
+    margin: 10px;
+}
+
+/*
+*** Contacto
+*/
+
+
+.contacto{
+    background-color: rgb(17, 101, 122);
+    padding: 20px;
+}
+
+
+.contacto h2 {
+    margin: 2%;
+    text-align: center;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.form-enviar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 10% 2% 10%;
+}
+
+.form-enviar input{
+    width: 45%;
+}
+
+.form-enviar textarea{
+    width: 100%;
+}
+
+.button-enviar {
+    text-decoration: none;
+    margin-left: 45%;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(17, 55, 73);
+    border-radius: 6px;
+}
