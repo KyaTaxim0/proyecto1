@@ -30,6 +30,7 @@
                     nostrum consectetur, omnis reprehenderit obcaecati distinctio veritatis quaerat odit rem quia dicta
                     vel vero alias? Earum.
                 </p>
+                <br>
                 <a class="button-ver_cv" href="#">Ver CV</a>
         </section>
         <section class="misskills">
@@ -94,15 +95,15 @@
             <h2>Contacto</h2>
                 <form>
                     <div class="form-enviar">
-                        <input name="nombre" type="text" placeholder="Nombre">
-                        <input name="apellido" type="text" placeholder="Apellido">
+                        <input required pattern="[a-zA-Z]+" name="nombre" type="text" placeholder="Nombre">
+                        <input required pattern="[a-zA-Z]+" name="apellido" type="text" placeholder="Apellido">
                     </div>
                     <div class="form-enviar">
-                        <input name="email" type="text" placeholder="Email">
-                        <input name="telefono" type="text" placeholder="Telefono">
+                        <input required name="email" type="text" placeholder="Email">
+                        <input required name="telefono" type="number" placeholder="Telefono">
                     </div>
                     <div class="form-enviar">            
-                        <textarea name="descrip" rows="4" type="text" placeholder="Descripcion"></textarea>
+                        <textarea required pattern="[a-zA-Z0-9]+" maxlength="400"  name="descrip" rows="4"type="text" placeholder="Descripcion"></textarea>
                     </div>
                     <button class="button-enviar" type="submit">Enviar</button>
                 </form>

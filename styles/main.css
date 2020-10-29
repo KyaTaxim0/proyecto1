@@ -2,15 +2,26 @@
 ** GLOBAL
 */
 
+body{
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+h2{
+    margin:2%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
 .estructura {
     display: flex;
     justify-content: space-between;
-    margin: 0px 10% 0px 10%;
+    margin: 2% 10% 2% 10%;
 }
 
 
 /*
-*** Inicio
+*** INICIO
 */
 
 .inicio{
@@ -19,27 +30,26 @@
 
 .inicio img {
     display: inline-block;
-    text-align: center;
     width: 100%;
 }
 
 .inicio h1 {
     position: absolute;
+    font-family: Helvetica, sans-serif;
     color:white;
     font-weight: bold;
     font-size: 62px;
-    font-family: Helvetica, sans-serif;
     top: 20px;
-    left: 40%;
+    width: 100vw;
+    text-align: center;
 }
 
 /*Revisar*/
 .inicio h2 { 
     position: absolute;
-    color:white;
-    font-size: 42px;
-    font-weight: 600;
     font-family: Helvetica, sans-serif;
+    color:white;
+    padding: 20px;
     bottom: 10%;
     width: 350px;
     left: 10%;
@@ -47,29 +57,25 @@
 
 
 /*
-*** Sobre Mi
+*** SOBREMI
 */
 
 
 
 .sobremi {
     background-color: mediumpurple;
-    padding: 20px;
+    padding: 30px ;
 }
 
 
 
 .sobremi h2 {
-    margin: 2%;
     text-align: center;
     color: darkblue;
-    font-size: 35px;
-    font-weight: bold;
 }
 
 
 .sobremi p {
-    margin: 2%;
     text-align: center;
 }
 
@@ -77,7 +83,7 @@
 .sobremi a {
     text-decoration: none;
     margin-left: 10px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
     font-size: 20px;
     color: white;
     background-color: violet;
@@ -85,7 +91,7 @@
 }
 
 /*
-*** Mis Skills
+*** SKILLS
 */
 
 
@@ -96,18 +102,15 @@
 
 
 .misskills h2 {
-    margin: 2%;
     text-align: center;
     color: chartreuse;
-    font-size: 35px;
-    font-weight: bold;
 }
 
 
 .columna{
     width: 50%;
     color: white;
-    margin-right: 10%;
+    margin: 0 10%;
 }
 
 
@@ -115,7 +118,7 @@
     background-color: white;
     height: 10px;
     width: 100%;
-    margin: 2.5% 0% 2.5% 0%;
+    margin: 2.5% 0%;
     border-radius: 6px;
 }
 
@@ -128,7 +131,7 @@
 }
 
 /*
-*** Portafolio
+*** PORTAFOLIO
 */
 
 
@@ -139,19 +142,21 @@
 
 
 .portafolio h2 {
-    margin: 2%;
     text-align: center;
     color: seagreen;
-    font-size: 35px;
-    font-weight: bold;
 }
 
 .portafolio figure{
     margin: 10px;
 }
 
+.portafolio img{
+    width: 100%;
+}
+
+
 /*
-*** Clientes
+*** CLIENTES
 */
 
 
@@ -162,19 +167,21 @@
 
 
 .clientes h2 {
-    margin: 2%;
     text-align: center;
     color: greenyellow;
-    font-size: 35px;
-    font-weight: bold;
 }
 
 .clientes figure{
     margin: 10px;
 }
 
+.clientes img{
+    width: 100%;
+}
+
+
 /*
-*** Contacto
+*** CONTACTO
 */
 
 
@@ -185,11 +192,8 @@
 
 
 .contacto h2 {
-    margin: 2%;
     text-align: center;
     color: red;
-    font-size: 35px;
-    font-weight: bold;
 }
 
 .form-enviar {
@@ -209,9 +213,24 @@
 .button-enviar {
     text-decoration: none;
     margin-left: 45%;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
     font-size: 20px;
     color: white;
     background-color: rgb(17, 55, 73);
     border-radius: 6px;
+}
+
+
+/*
+**VALIDACION
+*/
+
+input:focus,
+textarea:focus{
+ background-color: rgb(214, 214, 214);   
+}
+
+button:hover{
+    color: white;
+    background-color: rgb(34, 76, 95);
 }
